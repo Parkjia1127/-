@@ -5,7 +5,7 @@
   "main": "worker/index.ts",
   "compatibility_date": "2025-10-01",
   "assets": { "directory": "dist", "binding": "ASSETS", "not_found_handling": "single-page-application", "run_worker_first": ["/api/*", "/", "/posts/*", "/admin"] },
-  "d1_databases": [{ "binding": "DB", "database_name": "app", "database_id": "local" }],
+  "d1_databases": [{ "binding": "DB", "database_name": "app", "database_id": "a23f36d7-73b9-44e0-b4bf-b48c5371d382" }],
   "secrets": { "required": ["OPERATOR_SETUP_CODE"] },
   "vars": {}
 }

@@ -1,0 +1,1 @@
+{ "data": { "tables": ["accounts", "deletion_log", "site_copy"] }, "secrets": ["OPERATOR_SETUP_CODE"] }

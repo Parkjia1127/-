@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>스쿨라운지</title>
+    <meta name="description" content="승인된 회원끼리 익명으로 대화하는 학교 게시판" />
+    <meta property="og:title" content="스쿨라운지" />
+    <meta property="og:description" content="승인된 회원끼리 익명으로 대화하는 학교 게시판" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:url" content="https://dgpy.baze.cloud/" />
+    <meta property="og:image" content="https://dgpy.baze.cloud/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="스쿨라운지" />
+    <meta name="twitter:description" content="승인된 회원끼리 익명으로 대화하는 학교 게시판" />
+    <meta name="theme-color" content="#6539c4" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="스쿨라운지" />
+    <link id="school-favicon" rel="icon" href="/party-icon-48.png" type="image/png" />
+    <link id="school-touch-icon" rel="apple-touch-icon" href="/party-icon-192.png" />
+    <link rel="manifest" href="/api/manifest.webmanifest" />
+    <!-- Body face: Pretendard Variable, always. -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <!--
+      Second family (display / serif), exactly one per template. Two ways:
+
+      A. Google Fonts (OFL): keep the two preconnects below and add ONE stylesheet link with
+         display=swap and only the weights you use, e.g.
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400&display=swap" />
+         Korean: Noto Serif KR · Gowun Batang · Nanum Myeongjo · Hahmlet · Song Myung · Black Han Sans ·
+         Do Hyeon · Gothic A1 · IBM Plex Sans KR · Bagel Fat One · Gugi
+         Latin display for wordmarks / numerals: Inter Tight · Instrument Serif · Space Grotesk ·
+         Bebas Neue · Anton · JetBrains Mono · IBM Plex Mono
+
+      B. Self-hosted: put the woff2 under public/fonts/ with its license file beside it, declare
+         @font-face in src/styles.css with font-display: swap, and delete the two preconnects.
+
+      Then point the token at it in src/styles.css:
+         @theme static { --font-display: "Noto Serif KR", var(--font-body); }
+      and use it through `font-display` / `.display` only. check.mjs fails the build if a
+      declared family never loads, so the token must name a face this page actually links.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
